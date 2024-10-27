@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>
+    {% block pagename %}
+        <h1>pagename</h1>
+    {% endblock %}
+</title>
+<header>
+    {% block header %}
+    <h1>header</h1>
+    {% endblock %}
+</header>
+
+<menu>
+    {% block menu %}
+    <ul style="text-align:center; span style=font-family: Arial;">
+            <li><h2><a href="http://127.0.0.1:8000/main" target="_self">Главная страница</a></h2></li>
+            <li><h2><a href="http://127.0.0.1:8000/page_1" target="_self">Магазин</a></h2></li>
+            <li><h2><a href="http://127.0.0.1:8000/page_2" target="_self">Корзина</a></h2></li>
+    </ul>
+    {% endblock %}
+</menu>
+
+<content>
+    {% block content %}
+    <h1>content</h1>
+    {% endblock %}
+</content>
+
+</html>

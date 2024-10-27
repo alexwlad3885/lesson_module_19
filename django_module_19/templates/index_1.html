@@ -1,0 +1,27 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+    Магазин
+{% endblock %}
+
+{% block header %}
+    <br>
+    <h1 style="text-align:center; span=font-family: Arial;">ИГРЫ</h1>
+    <br>
+    <hr width=600, size=2, color=>
+    <br>
+{% endblock %}
+
+{% block menu %}
+    {{block.super}}
+{% endblock %}
+
+{% block content %}
+    {% for game in Games %}
+        <p style="text-align:center; span=font-family: Arial;">{{ game.title }}|{{ game.description }}|'Стоимость: '{{ game.cost}}<button>КУПИТЬ</button></p>
+    {% endfor %}
+    <br>
+    <br>
+    <a href="http://127.0.0.1:8000/main"><button >ВОЗВРАТ НА ГЛАВНУЮ СТРАНИЦУ</button></a>
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+    Главная страница
+{% endblock %}
+
+{% block header %}
+    <br>
+    <h1 style="text-align:center; span=font-family: Arial;">ГЛАВНАЯ СТРАНИЦА</h1>
+    <br>
+    <hr width=600, size=2, color=>
+    <br>
+{% endblock %}
+
+{% block menu %}
+    {{block.super}}
+{% endblock %}
+
+{% block content %}
+    <h2></h2>
+    {% for key, value in info.items %}
+        <h1>{{ value }}</h1>
+    {% endfor %}
+
+{% endblock %}

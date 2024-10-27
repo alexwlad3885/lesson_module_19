@@ -1,0 +1,25 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+    Корзина
+{% endblock %}
+
+{% block header %}
+    <br>
+    <h1 style="text-align:center; span=font-family: Arial;">КОРЗИНА</h1>
+    <br>
+    <hr width=600, size=2, color=>
+    <br>
+{% endblock %}
+
+{% block menu %}
+    {{block.super}}
+{% endblock %}
+
+{% block content %}
+    <br>
+    <h2 style="text-align:center; span=font-family: Arial;">ИЗВИНИТЕ ВАША КОРЗИНА ПУСТА!</h2>
+    <br>
+    <br>
+    <a href="http://127.0.0.1:8000/main"><button >ВОЗВРАТ НА ГЛАВНУЮ СТРАНИЦУ</button></a>
+{% endblock %}
